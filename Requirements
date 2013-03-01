@@ -1,0 +1,5 @@
+To make a Shared libraries with G++ on Linux
+
+You must have installed g++ compiler on your system.
+	$ sudo apt-get install g++
+
