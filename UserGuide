@@ -1,0 +1,330 @@
+				
+	    ^-^-^-^	  ^-^-^-^	USER GUIDE   	^-^-^-^   ^-^-^-^
+				   ^=^=^=^=^=^=^=^=^=^=
+
+How to use this library
+
+
+#####################################################################################################
+		
+
+
+/*******************************	CREATES HORIZONTAL LINE		****************************/
+	
+ Within a main() function,
+
+1. Creates an object of class line.
+
+2. Call the set() function with "horizontal" string, one point (x1, y1) and length of type double.
+	
+			x1   -->  x-coordinate of first point						
+		   	y1   -->  y-coordinate of first point
+		    length   -->  length of line
+
+3. Call the draw() function with filename that you want to give with ".dxf" extension. 
+
+@@@ Sample is :
+
+	line l;
+	l.set("horizontal", x1, y1, length) ;
+	l.draw("horizontal.dxf");    // by default, it fills with solid
+
+	
+/***************************************************************************************************/
+
+
+
+#####################################################################################################
+
+
+
+/********************************	CREATES VERTICAL LINE	   *********************************/
+	
+ Within a main() function,
+
+1. Creates an object of class line.
+
+2. Call the set() function with vertical string and x1, y1 and length parameters of type double.
+	
+			x1 --> x-coordinate of first point						
+		   	y1 --> y-coordinate of first point
+		    length --> length of line
+
+3. Call the draw() function with filename that you want to give with ".dxf" extension. 
+
+@@@ Sample is :
+
+		line l1;
+		l1.set("vertical", x1, y1, length) ;
+		l1.draw("verticalal.dxf");    // By default, it fills with solid
+
+
+/***************************************************************************************************/
+
+
+
+#####################################################################################################
+
+
+
+/************************	CREATE RECTANGLE WITH SOLID FILL	****************************/
+
+ Within a main() function,
+
+1. Creates an object of class line.
+
+2. Call the set() function with rectangle string and two points (x1,y1) and (x2,y2) of type double.
+	
+			x1 --> x-coordinate of first point						
+		   	y1 --> y-coordinate of first point
+		  	x2 --> x-cordinate of second point						
+		   	y2 --> y-cordinate of second point	
+
+3. Call the draw() function with following parameters:
+			
+			filename(string)   --> Filename that you want to build with .dxf extension
+			1          	   --> Solid fill flag. This is an optional field.
+			color_code(int)    --> Any color between 1 - 256 code. This is an optional field.
+						Default value is 256.
+
+			
+@@@ Sample is :
+
+		line l2;
+		l2.set ( "rectangle", x1, y1, x2, y2 ) ;
+		/* 
+		for solid, 
+		fill = 1, 
+		color_code = 67 to fill in circle 
+		*/
+	
+		l2.draw ( "rectangle_solid.dxf",1,67);
+		// this is also OK	
+		//l2.draw ( "rectangle_solid.dxf",1);
+
+
+
+
+/***************************************************************************************************/
+
+
+
+#####################################################################################################
+
+
+
+/***************************	CREATE RECTANGLE WITH PATTERN FILL	****************************/
+
+ Within a main() function,
+
+1. Creates an object of class line.
+
+2. Call the set() function with rectangle string and two points (x1,y1) and (x2,y2) of type double.
+	
+			x1 --> x-coordinate of first point						
+		   	y1 --> y-coordinate of first point
+		  	x2 --> x-cordinate of second point						
+		   	y2 --> y-cordinate of second point	
+
+3. Call the draw() function with following parameters:
+			
+			filename(string)     	--> Filename that you want to build with .dxf extension.
+			0            	     	--> Pattern fill flag.
+			pattern_Name(string) 	--> Check pattern_Name list.
+			pattern_Angle(double) 	--> Pattern angle between 0.0 - 360.0. This is an optional field.
+						     Default value is 30.0.
+			pattern_Scale(double) 	--> Pattern spacing. This is an optional field.
+						     Default value is 1.0.
+			color_code(int)    	--> Any color between 1 - 256 code. This is an optional field.
+						     Default value is 256.
+			
+@@@ Sample is :
+
+		line l3;
+		l3.set ( "rectangle", x1, y1, x2, y2 ) ;
+	
+		/*
+		for pattern,
+		fill = 0,
+		pattern_Name = "ansi31"
+		pattern_Angle = 30.0 			
+		pattern_Scale = 1.2  			
+		color_code = 111 to fill in circle
+		*/
+
+		l3.draw ( "rectangle_pattern.dxf", 0, "ansi31", 30.0, 2.0, 121);
+		
+		// it is also OK
+		//l3.draw ( "rectangle_pattern.dxf", 0, "ansi31");
+
+
+
+/***************************************************************************************************/
+
+
+
+#####################################################################################################
+
+
+
+/**********************************	CREATE CIRCLE	  ******************************************/
+
+ Within a main() function,
+
+1. Creates an object of class circle.
+
+2. Call the set() function with circle string, one point (x1,y1) and radius (rad) of type double.
+	
+			x1  --> x-coordinate of center point						
+		   	y1  --> y-coordinate of center point
+		  	rad --> radius of circle
+
+3. Call the draw() function with following parameters:
+			
+			filename(string)   --> Filename that you want to build with .dxf extension
+			
+
+@@@ Sample is :
+
+		circle c;
+		c.set( "circle", x1, y1, rad);
+		c.draw( "circle.dxf");		// By default, it fills with solid
+
+
+
+/***************************************************************************************************/
+
+
+
+#####################################################################################################
+
+
+
+/**************************	CREATE CIRCLE WITH SOLID FILL	   *********************************/
+
+ Within a main() function,
+
+1. Creates an object of class circle.
+
+2. Call the set() function with "circle" string, point (x1,y1) and radius (rad) of type double.
+	
+			x1  --> x-coordinate of center point						
+		   	y1  --> y-coordinate of center point
+		  	rad --> radius of circle
+
+3. Call the draw() function with following parameters:
+			
+			filename(string)   --> Filename that you want to build with .dxf extension
+			1          	   --> Solid fill flag. This is an optional field.
+			color_code(int)    --> Any color between 1 - 256 code. This is an optional field.
+						Default value is 256.
+
+			
+@@@ Sample is :
+
+		
+		circle c1;
+		c1.set( "circle", x1, y1, rad); 
+			
+		/* 
+		for solid, 
+		fill = 1, 
+		color_code = 127 to fill in circle 
+		*/
+		
+		c1.draw( "circle_solid.dxf", 1, 127);	
+	
+		// tis is also OK	
+		//c.draw( "circle.dxf", 1);
+
+
+
+/***************************************************************************************************/
+
+
+
+#####################################################################################################
+
+
+
+/*************************       CREATE CIRCLE WITH PATTERN FILL   	****************************/
+
+ Within a main() function,
+
+1. Creates an object of class circle.
+
+2. Call the set() function with "circle" string, one point (x1,y1) and radius (rad) of type double.
+	
+			x1  --> x-coordinate of center point						
+		   	y1  --> y-coordinate of center point
+		  	rad --> radius of circle
+
+3. Call the draw() function with following parameters:
+			
+			filename(string)     	--> Filename that you want to build with .dxf extension.
+			0            	     	--> Pattern fill flag.
+			pattern_Name(string) 	--> Check pattern_Name list.
+			pattern_Angle(double) 	--> Pattern angle between 0.0 - 360.0. This is an optional field.
+						     Default value is 30.0.
+			pattern_Scale(double) 	--> Pattern spacing. This is an optional field.
+						     Default value is 1.0.
+			color_code(int)    	--> Any color between 1 - 256 code. This is an optional field.
+						     Default value is 256.
+			
+@@@ Sample is :
+
+
+		circle c2;
+		c2.set( "circle", x1, y1, rad); 
+	
+		/*	
+		for pattern,
+		fill = 0,
+		pattern_Name = "honeycomb"
+		pattern_Angle = 20.0			
+		pattern_Scale = 1.5  			
+		color_code = 111 to fill in circle 
+		*/
+	
+		c2.draw( "circle_pattern.dxf", 0, "honeycomb", 20.0, 1.5, 111); 
+		// it is also ok
+		//c2.draw( "circle_pattern.dxf", 0, "honeycomb");
+
+
+		
+/***************************************************************************************************/
+
+
+	
+#####################################################################################################
+
+	
+/***************************************************************************************************/
+/***************************************	PROGRAM  	************************************/
+
+1. Create a program named example1.cpp
+	
+	// include header files
+		
+	#include <iostream> 	
+	#include <stdlib.h>
+	#include "dxf_2D.h"  		// include library "dxf_2D.h"
+
+	using namespace std;
+		    
+		int main()
+		{
+			line l;
+			l.set("rectangle",x1,y1,x2,y2,);	
+			l.draw("rectangle.dxf");
+			circle c;
+			c.set(circle, x1, y1, rad);
+			c.draw( "circle.dxf");
+			return 0;
+		}
+
+
+
+
+/***************************************************************************************************/
+/***************************************************************************************************/
