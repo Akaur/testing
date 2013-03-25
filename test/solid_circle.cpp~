@@ -1,0 +1,20 @@
+# include <iostream>
+# include <stdlib.h>
+# include "../include/dxf_2D.h" 
+
+using namespace std;
+
+	int main()
+	{
+		point p1(0,23), p2(-14,0), p3(14,0);
+		dxf d("s_circle.dxf");
+		/* create circle
+		   4 layer
+		   "s_circle.dxf" output filename
+		   1 for solid fill
+		   color = 50
+		*/
+		circle c(p1,p2,4,d,1,50);
+		return 0 ;
+	
+	}
