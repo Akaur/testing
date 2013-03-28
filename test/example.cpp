@@ -192,44 +192,53 @@ using namespace std;
   		*/
 
 		dxf file("design.dxf");			//name of output file
-		int beamWidth = 300;			// beam width
-		int beamDepth = 600;			// beam depth
-		int diaSteelComp = 16;
-		int radSteelComp = diaSteelComp/2;		
-		int diaSteelTension = 25;
-		int radSteelTension = diaSteelTension/2;		
-		int noSteelComp = 3;
-		int noSteelTension = 4;
-		int clearCover = 40;
-		double x1 = 52;
-		double y1 = 52;
-
-		double x2 = 48;
-		double y2 = 552;
+		int beamWidth 		= 300;			// beam width
+		int beamDepth 		= 600;			// beam depth
+		int diaSteelComp 	= 16;
+		int radSteelComp 	= diaSteelComp/2;		
+		int diaSteelTension 	= 25;
+		int radSteelTension 	= diaSteelTension/2;		
+		int noSteelComp 	= 9;
+		int noSteelTension 	= 4;
+		int clearCover 		= 40;
+		double xTension 	= clearCover + radSteelTension;
+		double yTension 	= clearCover + radSteelTension;
+		double xComp 		= clearCover + radSteelComp ;
+		double yComp 		= beamDepth - (clearCover + radSteelComp);
 		
-		point pt1(0,0), pt2(beamWidth, beamDepth);
+		point	pt1(0,0),
+			pt2(beamWidth, beamDepth);
+
 		rectangle beam( pt1, pt2, "Layer1", file);
 
-		point pt3(40,40), pt4(260, 560);
+		point	pt3(clearCover,clearCover),
+			pt4((beamWidth - clearCover), (beamDepth - clearCover));
+
 		rectangle r(pt3, pt4, "Layer1", file);
 		
-		circle *box[noSteelTension]; 		
+		circle *Tension[noSteelTension]; 		
 		for (int i=0; i<noSteelTension; i++)
-		{	point pt5(x1, y1);
-			box[i] = new circle(pt5, radSteelTension, "Layer1", file);
-			x1 = x1 + 65.3;
+		{	
+			point		  ptTension(xTension, yTension);
+			Tension[i]	= new circle(ptTension, radSteelTension, "Layer1", file);
+			xTension 	= xTension + 65.3;
 		}
 
-		circle *box1[noSteelComp];
+		
+		circle *Comp[noSteelComp];
 		for (int i=0; i<noSteelComp; i++)
-		{	point pt5(x2, y2);
-			box[i] = new circle(pt5, radSteelComp, "Layer1", file);
-			x2 = x2 + 102;
+		{	
+			point			ptComp(xComp, yComp);
+			Comp[i]		= new circle(ptComp, radSteelComp, "Layer1", file);
+			xComp		= xComp + 102;
+			if (xComp > (beamWidth - clearCover))
+			{	
+				yComp		= yComp -30;
+				xComp		= 102;		
+			}			
 		}
 		file.save();
-
-		return 0 ;
-	
+		return 0;
 	}
 
 
