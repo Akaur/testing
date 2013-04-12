@@ -8,9 +8,10 @@ Within a main() function, the steps are :
 STEP 1:
 Create an object of dxf class with output filename with .dxf extension such as
 
-            dxf file("design.dxf");
+            dxf file("CAD.dxf");
 		
         where file is an object that holds output filename "design.dxf".
+You can give any output file name here.
 
 
 
@@ -89,5 +90,23 @@ Save output file with save() function such as
             file.save();
 
 
+
+How to RUN this
+
+1. Save this file in test folder with extension .cpp such as "cad.cpp".
+
+2. Open the terminal, run
+	$ cd testing
+
+3. Linking with shared library
+	$ g++ -L./lib -Wall -o prog test/cad.cpp -ldxf_2D
+	
+4. Make library available at runtime
+	$ export LD_LIBRARY_PATH=./lib/:LD_LIBRARY_PATH
+
+5. Run
+	$ ./prog
+
+Now you can open "cad.dxf" with librecad.
 
 
