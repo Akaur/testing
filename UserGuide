@@ -90,7 +90,7 @@ Save output file with save() function such as
             file.save();
 
 
-
+#############################################################################
 How to RUN this
 
 1. Save this file in test folder with extension .cpp such as "cad.cpp".
@@ -107,6 +107,6 @@ How to RUN this
 5. Run
 	$ ./prog
 
-Now you can open "cad.dxf" with librecad.
+Now you can open "CAD.dxf" with librecad.
 
 
