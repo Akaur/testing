@@ -1,0 +1,86 @@
+\hypertarget{classrectangle}{\section{rectangle Class Reference}
+\label{classrectangle}\index{rectangle@{rectangle}}
+}
+
+
+Rectangle entity class.  
+
+
+
+
+{\ttfamily \#include $<$dxf\-\_\-2\-D.\-h$>$}
+
+Inheritance diagram for rectangle\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrectangle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classrectangle_acdc53c26d992570f77862a76aa6c07e7}{\hyperlink{classrectangle_acdc53c26d992570f77862a76aa6c07e7}{rectangle} ()}\label{classrectangle_acdc53c26d992570f77862a76aa6c07e7}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classrectangle_a2b6c06e9b26e4b69a3219f7d68040cf0}{rectangle} (\hyperlink{classpoint}{point} \&, \hyperlink{classpoint}{point} \&, string, \hyperlink{classdxf}{dxf} \&)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
+\hyperlink{classrectangle_ad057163264d95fa833a1ad9887a78d0c}{rectangle} (\hyperlink{classpoint}{point} \&, \hyperlink{classpoint}{point} \&, string, \hyperlink{classdxf}{dxf} \&, int hflag, int hcolor=256)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for solid fill. \end{DoxyCompactList}\item 
+\hypertarget{classrectangle_af6b2a94031985fe184fc0b7bb5466822}{\hyperlink{classrectangle_af6b2a94031985fe184fc0b7bb5466822}{rectangle} (\hyperlink{classpoint}{point} \&, \hyperlink{classpoint}{point} \&, string, \hyperlink{classdxf}{dxf} \&, int hflag, string p\-\_\-name, int hcolor=256)}\label{classrectangle_af6b2a94031985fe184fc0b7bb5466822}
+
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Rectangle entity class. 
+
+Definition at line 219 of file dxf\-\_\-2\-D.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classrectangle_a2b6c06e9b26e4b69a3219f7d68040cf0}{\index{rectangle@{rectangle}!rectangle@{rectangle}}
+\index{rectangle@{rectangle}!rectangle@{rectangle}}
+\subsubsection[{rectangle}]{\setlength{\rightskip}{0pt plus 5cm}rectangle\-::rectangle (
+\begin{DoxyParamCaption}
+\item[{{\bf point} \&}]{pt1, }
+\item[{{\bf point} \&}]{pt2, }
+\item[{string}]{dlayer, }
+\item[{{\bf dxf} \&}]{d}
+\end{DoxyParamCaption}
+)}}\label{classrectangle_a2b6c06e9b26e4b69a3219f7d68040cf0}
+
+
+Parameterized constructor. 
+
+Initializes starting and ending points of rectangle, specify the layer and calls write\-\_\-\-Rect(x\-Start, y\-Start, z\-Start, x\-End, y\-End, z\-End, layer) function of dxf class for writing rectangle entity to D\-X\-F file. 
+
+Definition at line 44 of file dxf\-\_\-rect.\-cpp.
+
+\hypertarget{classrectangle_ad057163264d95fa833a1ad9887a78d0c}{\index{rectangle@{rectangle}!rectangle@{rectangle}}
+\index{rectangle@{rectangle}!rectangle@{rectangle}}
+\subsubsection[{rectangle}]{\setlength{\rightskip}{0pt plus 5cm}rectangle\-::rectangle (
+\begin{DoxyParamCaption}
+\item[{{\bf point} \&}]{pt1, }
+\item[{{\bf point} \&}]{pt2, }
+\item[{string}]{dlayer, }
+\item[{{\bf dxf} \&}]{d, }
+\item[{int}]{hflag, }
+\item[{int}]{hcolor = {\ttfamily 256}}
+\end{DoxyParamCaption}
+)}}\label{classrectangle_ad057163264d95fa833a1ad9887a78d0c}
+
+
+Parameterized constructor for solid fill. 
+
+Initialize starting and ending points of rectangle, specify the layer, flag = 1 for solid fill and calls write\-\_\-\-Rect(x\-Start, y\-Start, z\-Start, x\-End, y\-End, z\-End, layer, flag, color) function of dxf class for writing rectangle (solid fill) entity to D\-X\-F file. 
+
+Definition at line 76 of file dxf\-\_\-rect.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{dxf__2D_8h}{dxf\-\_\-2\-D.\-h}\item 
+src/\hyperlink{dxf__rect_8cpp}{dxf\-\_\-rect.\-cpp}\end{DoxyCompactItemize}

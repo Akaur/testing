@@ -1,0 +1,106 @@
+\hypertarget{classcircle}{\section{circle Class Reference}
+\label{classcircle}\index{circle@{circle}}
+}
+
+
+Circle entity class.  
+
+
+
+
+{\ttfamily \#include $<$dxf\-\_\-2\-D.\-h$>$}
+
+Inheritance diagram for circle\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcircle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcircle_a4e0786fc75051f3bbe5de2e08ef9712d}{\hyperlink{classcircle_a4e0786fc75051f3bbe5de2e08ef9712d}{circle} ()}\label{classcircle_a4e0786fc75051f3bbe5de2e08ef9712d}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classcircle_a265f35d522e8d1bf2a3953146caec09e}{circle} (\hyperlink{classpoint}{point} \&, double, string, \hyperlink{classdxf}{dxf} \&)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
+\hyperlink{classcircle_a6824eba724e2ec93029fd50423d13008}{circle} (\hyperlink{classpoint}{point} \&, double, string, \hyperlink{classdxf}{dxf} \&, int hflag, int hcolor=256)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for solid fill. \end{DoxyCompactList}\item 
+\hyperlink{classcircle_a4a17fabc4fe9f4da10f30cd8272ed8b5}{circle} (\hyperlink{classpoint}{point} \&, double, string, \hyperlink{classdxf}{dxf} \&, int hflag, string p\-\_\-name, int hcolor=256)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for pattern fill. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Circle entity class. 
+
+Definition at line 192 of file dxf\-\_\-2\-D.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcircle_a265f35d522e8d1bf2a3953146caec09e}{\index{circle@{circle}!circle@{circle}}
+\index{circle@{circle}!circle@{circle}}
+\subsubsection[{circle}]{\setlength{\rightskip}{0pt plus 5cm}circle\-::circle (
+\begin{DoxyParamCaption}
+\item[{{\bf point} \&}]{pt1, }
+\item[{double}]{r, }
+\item[{string}]{dlayer, }
+\item[{{\bf dxf} \&}]{d}
+\end{DoxyParamCaption}
+)}}\label{classcircle_a265f35d522e8d1bf2a3953146caec09e}
+
+
+Parameterized constructor. 
+
+Initializes starting point and radius of circle, specify the layer and calls write\-\_\-\-Circle(x\-Start, y\-Start, z\-Start, radius, layer) function of dxf class for writing circle. entity to D\-X\-F file. 
+
+Definition at line 45 of file dxf\-\_\-circle.\-cpp.
+
+\hypertarget{classcircle_a6824eba724e2ec93029fd50423d13008}{\index{circle@{circle}!circle@{circle}}
+\index{circle@{circle}!circle@{circle}}
+\subsubsection[{circle}]{\setlength{\rightskip}{0pt plus 5cm}circle\-::circle (
+\begin{DoxyParamCaption}
+\item[{{\bf point} \&}]{pt1, }
+\item[{double}]{r, }
+\item[{string}]{dlayer, }
+\item[{{\bf dxf} \&}]{d, }
+\item[{int}]{hflag, }
+\item[{int}]{hcolor = {\ttfamily 256}}
+\end{DoxyParamCaption}
+)}}\label{classcircle_a6824eba724e2ec93029fd50423d13008}
+
+
+Parameterized constructor for solid fill. 
+
+Initialize starting point and radius of circle, specify the layer, flag = 1 for solid fill and calls write\-\_\-\-Circle(x\-Start, y\-Start, z\-Start, radius, layer, flag, color) function of dxf class for writing circle (solid fill) entity to D\-X\-F file. 
+
+Definition at line 74 of file dxf\-\_\-circle.\-cpp.
+
+\hypertarget{classcircle_a4a17fabc4fe9f4da10f30cd8272ed8b5}{\index{circle@{circle}!circle@{circle}}
+\index{circle@{circle}!circle@{circle}}
+\subsubsection[{circle}]{\setlength{\rightskip}{0pt plus 5cm}circle\-::circle (
+\begin{DoxyParamCaption}
+\item[{{\bf point} \&}]{pt1, }
+\item[{double}]{r, }
+\item[{string}]{dlayer, }
+\item[{{\bf dxf} \&}]{d, }
+\item[{int}]{hflag, }
+\item[{string}]{p\-\_\-name, }
+\item[{int}]{hcolor = {\ttfamily 256}}
+\end{DoxyParamCaption}
+)}}\label{classcircle_a4a17fabc4fe9f4da10f30cd8272ed8b5}
+
+
+Parameterized constructor for pattern fill. 
+
+Initialize starting point and radius of circle, specify the layer, flag = 0 for pattern fill and calls write\-\_\-\-Circle(x\-Start, y\-Start, z\-Start, radius, layer, flag, pattern\-\_\-name, color) function of dxf class for writing circle (pattern fill) entity to D\-X\-F file. 
+
+Definition at line 107 of file dxf\-\_\-circle.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{dxf__2D_8h}{dxf\-\_\-2\-D.\-h}\item 
+src/\hyperlink{dxf__circle_8cpp}{dxf\-\_\-circle.\-cpp}\end{DoxyCompactItemize}

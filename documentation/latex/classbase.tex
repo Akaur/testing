@@ -1,0 +1,296 @@
+\hypertarget{classbase}{\section{base Class Reference}
+\label{classbase}\index{base@{base}}
+}
+
+
+Base class defines functions for D\-X\-F header, footer and hatching section.  
+
+
+
+
+{\ttfamily \#include $<$dxf\-\_\-2\-D.\-h$>$}
+
+Inheritance diagram for base\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classbase_a7db4428cce94f69118405d98e6c239ee}{read\-\_\-\-Header} ()
+\begin{DoxyCompactList}\small\item\em Reads D\-X\-F header. \end{DoxyCompactList}\item 
+void \hyperlink{classbase_a03a4fcadee3375d5cb13195f82784450}{read\-\_\-\-Footer} ()
+\begin{DoxyCompactList}\small\item\em Reads D\-X\-F E\-O\-F section. \end{DoxyCompactList}\item 
+void \hyperlink{classbase_af4743cfcd16393cfc86bbcfd854a0727}{write\-\_\-\-Hatch\-\_\-\-Start} (int, string, int)
+\begin{DoxyCompactList}\small\item\em Writes Hatch entity start part. \end{DoxyCompactList}\item 
+void \hyperlink{classbase_acae9199dd5ca813b319665e8aa963bad}{write\-\_\-\-Hatch\-\_\-\-End} ()
+\begin{DoxyCompactList}\small\item\em Writes hatch entity end part. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ofstream \hyperlink{classbase_a1a4cdb81a9c9f77818a0fdd34165a1ab}{write\-File}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classbase_a7703056e2be3f7e97f974e77146c3a02}{x\-Start}
+\item 
+double \hyperlink{classbase_a11d50718a751a277f133430692b13bbf}{y\-Start}
+\item 
+double \hyperlink{classbase_aa53533269b638644cb48a1cafc969852}{z\-Start}
+\item 
+double \hyperlink{classbase_aa4702751e837e49dcb88eaf2944f3c1f}{x\-End}
+\item 
+double \hyperlink{classbase_aa5a4fed2eaf64367a8ef693d8d054081}{y\-End}
+\item 
+double \hyperlink{classbase_ad599903bf17e619b3fe11c592f981682}{z\-End}
+\item 
+double \hyperlink{classbase_a83f02880ca88c37fcb28acced4d6b9a7}{x\-Mid}
+\item 
+double \hyperlink{classbase_acb79a7b7e25b442e350a151626f8aa46}{y\-Mid}
+\item 
+double \hyperlink{classbase_a36bed779447a9b6e7a902dc1d065ffb2}{radius}
+\item 
+ifstream \hyperlink{classbase_a707f4830c851eb50e9e2299fae731075}{read\-File}
+\item 
+int \hyperlink{classbase_ac16efe03b1a537989afd2a1eebdde0e9}{flag}
+\item 
+int \hyperlink{classbase_af5da8689af8a9b1bf5376873bbece1ae}{edges}
+\item 
+int \hyperlink{classbase_a65b11e6006cd45d381b31d6fbaa82c67}{edge\-\_\-type}
+\item 
+int \hyperlink{classbase_af8027c0e104b55838579c8cae311b558}{color}
+\item 
+string \hyperlink{classbase_aa3e204024e466de567044e1e992d39db}{dxf\-\_\-filename}
+\item 
+string \hyperlink{classbase_a8d165e9a0576b127d61404745e4deb1a}{readwrite}
+\item 
+string \hyperlink{classbase_a7ea31106027652ddba7c37809cade6ac}{pattern\-\_\-name}
+\item 
+string \hyperlink{classbase_adc118bdac066f100bb2ce0fa6d1cd657}{name}
+\item 
+string \hyperlink{classbase_ace32e46b9aa7521f7523e57e148dd248}{layer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class defines functions for D\-X\-F header, footer and hatching section. 
+
+Definition at line 35 of file dxf\-\_\-2\-D.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbase_a03a4fcadee3375d5cb13195f82784450}{\index{base@{base}!read\-\_\-\-Footer@{read\-\_\-\-Footer}}
+\index{read\-\_\-\-Footer@{read\-\_\-\-Footer}!base@{base}}
+\subsubsection[{read\-\_\-\-Footer}]{\setlength{\rightskip}{0pt plus 5cm}void base\-::read\-\_\-\-Footer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbase_a03a4fcadee3375d5cb13195f82784450}
+
+
+Reads D\-X\-F E\-O\-F section. 
+
+Opens \char`\"{}dxf\-\_\-footer.\-txt\char`\"{} for reading and writes at the end of output D\-X\-F file. 
+
+Definition at line 56 of file dxf\-\_\-base.\-cpp.
+
+\hypertarget{classbase_a7db4428cce94f69118405d98e6c239ee}{\index{base@{base}!read\-\_\-\-Header@{read\-\_\-\-Header}}
+\index{read\-\_\-\-Header@{read\-\_\-\-Header}!base@{base}}
+\subsubsection[{read\-\_\-\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void base\-::read\-\_\-\-Header (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbase_a7db4428cce94f69118405d98e6c239ee}
+
+
+Reads D\-X\-F header. 
+
+Opens \char`\"{}dxf\-\_\-header.\-txt\char`\"{} file for reading and writes at the start of D\-X\-F file. 
+
+Definition at line 30 of file dxf\-\_\-base.\-cpp.
+
+\hypertarget{classbase_acae9199dd5ca813b319665e8aa963bad}{\index{base@{base}!write\-\_\-\-Hatch\-\_\-\-End@{write\-\_\-\-Hatch\-\_\-\-End}}
+\index{write\-\_\-\-Hatch\-\_\-\-End@{write\-\_\-\-Hatch\-\_\-\-End}!base@{base}}
+\subsubsection[{write\-\_\-\-Hatch\-\_\-\-End}]{\setlength{\rightskip}{0pt plus 5cm}void base\-::write\-\_\-\-Hatch\-\_\-\-End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbase_acae9199dd5ca813b319665e8aa963bad}
+
+
+Writes hatch entity end part. 
+
+Writes the common end part of hatch entity to the entity section of output D\-X\-F file. 
+
+Definition at line 106 of file dxf\-\_\-base.\-cpp.
+
+\hypertarget{classbase_af4743cfcd16393cfc86bbcfd854a0727}{\index{base@{base}!write\-\_\-\-Hatch\-\_\-\-Start@{write\-\_\-\-Hatch\-\_\-\-Start}}
+\index{write\-\_\-\-Hatch\-\_\-\-Start@{write\-\_\-\-Hatch\-\_\-\-Start}!base@{base}}
+\subsubsection[{write\-\_\-\-Hatch\-\_\-\-Start}]{\setlength{\rightskip}{0pt plus 5cm}void base\-::write\-\_\-\-Hatch\-\_\-\-Start (
+\begin{DoxyParamCaption}
+\item[{int}]{flag, }
+\item[{string}]{pattern\-\_\-name, }
+\item[{int}]{color}
+\end{DoxyParamCaption}
+)}}\label{classbase_af4743cfcd16393cfc86bbcfd854a0727}
+
+
+Writes Hatch entity start part. 
+
+Writes the common start part of hatch entity to the the entity section of D\-X\-F output file. 
+
+Definition at line 82 of file dxf\-\_\-base.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbase_af8027c0e104b55838579c8cae311b558}{\index{base@{base}!color@{color}}
+\index{color@{color}!base@{base}}
+\subsubsection[{color}]{\setlength{\rightskip}{0pt plus 5cm}int base\-::color\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_af8027c0e104b55838579c8cae311b558}
+color-\/code\mbox{[}1-\/256\mbox{]} 
+
+Definition at line 51 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_aa3e204024e466de567044e1e992d39db}{\index{base@{base}!dxf\-\_\-filename@{dxf\-\_\-filename}}
+\index{dxf\-\_\-filename@{dxf\-\_\-filename}!base@{base}}
+\subsubsection[{dxf\-\_\-filename}]{\setlength{\rightskip}{0pt plus 5cm}string base\-::dxf\-\_\-filename\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_aa3e204024e466de567044e1e992d39db}
+output dxf filename 
+
+Definition at line 57 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_a65b11e6006cd45d381b31d6fbaa82c67}{\index{base@{base}!edge\-\_\-type@{edge\-\_\-type}}
+\index{edge\-\_\-type@{edge\-\_\-type}!base@{base}}
+\subsubsection[{edge\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}int base\-::edge\-\_\-type\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_a65b11e6006cd45d381b31d6fbaa82c67}
+boundary edge type 
+
+Definition at line 51 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_af5da8689af8a9b1bf5376873bbece1ae}{\index{base@{base}!edges@{edges}}
+\index{edges@{edges}!base@{base}}
+\subsubsection[{edges}]{\setlength{\rightskip}{0pt plus 5cm}int base\-::edges\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_af5da8689af8a9b1bf5376873bbece1ae}
+edges of boundary path 
+
+Definition at line 51 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_ac16efe03b1a537989afd2a1eebdde0e9}{\index{base@{base}!flag@{flag}}
+\index{flag@{flag}!base@{base}}
+\subsubsection[{flag}]{\setlength{\rightskip}{0pt plus 5cm}int base\-::flag\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_ac16efe03b1a537989afd2a1eebdde0e9}
+flag for hatching 
+
+Definition at line 51 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_ace32e46b9aa7521f7523e57e148dd248}{\index{base@{base}!layer@{layer}}
+\index{layer@{layer}!base@{base}}
+\subsubsection[{layer}]{\setlength{\rightskip}{0pt plus 5cm}string base\-::layer\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_ace32e46b9aa7521f7523e57e148dd248}
+layer\mbox{[}0-\/5\mbox{]} 
+
+Definition at line 57 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_adc118bdac066f100bb2ce0fa6d1cd657}{\index{base@{base}!name@{name}}
+\index{name@{name}!base@{base}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}string base\-::name\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_adc118bdac066f100bb2ce0fa6d1cd657}
+input filename for reading 
+
+Definition at line 57 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_a7ea31106027652ddba7c37809cade6ac}{\index{base@{base}!pattern\-\_\-name@{pattern\-\_\-name}}
+\index{pattern\-\_\-name@{pattern\-\_\-name}!base@{base}}
+\subsubsection[{pattern\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}string base\-::pattern\-\_\-name\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_a7ea31106027652ddba7c37809cade6ac}
+pattern name for pattern hatching 
+
+Definition at line 57 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_a36bed779447a9b6e7a902dc1d065ffb2}{\index{base@{base}!radius@{radius}}
+\index{radius@{radius}!base@{base}}
+\subsubsection[{radius}]{\setlength{\rightskip}{0pt plus 5cm}double base\-::radius\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_a36bed779447a9b6e7a902dc1d065ffb2}
+radius of circle 
+
+Definition at line 39 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_a707f4830c851eb50e9e2299fae731075}{\index{base@{base}!read\-File@{read\-File}}
+\index{read\-File@{read\-File}!base@{base}}
+\subsubsection[{read\-File}]{\setlength{\rightskip}{0pt plus 5cm}ifstream base\-::read\-File\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_a707f4830c851eb50e9e2299fae731075}
+object for reading files 
+
+Definition at line 49 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_a8d165e9a0576b127d61404745e4deb1a}{\index{base@{base}!readwrite@{readwrite}}
+\index{readwrite@{readwrite}!base@{base}}
+\subsubsection[{readwrite}]{\setlength{\rightskip}{0pt plus 5cm}string base\-::readwrite\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_a8d165e9a0576b127d61404745e4deb1a}
+reads from input file and writes to output file 
+
+Definition at line 57 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_a1a4cdb81a9c9f77818a0fdd34165a1ab}{\index{base@{base}!write\-File@{write\-File}}
+\index{write\-File@{write\-File}!base@{base}}
+\subsubsection[{write\-File}]{\setlength{\rightskip}{0pt plus 5cm}ofstream base\-::write\-File}}\label{classbase_a1a4cdb81a9c9f77818a0fdd34165a1ab}
+object for writing files 
+
+Definition at line 66 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_aa4702751e837e49dcb88eaf2944f3c1f}{\index{base@{base}!x\-End@{x\-End}}
+\index{x\-End@{x\-End}!base@{base}}
+\subsubsection[{x\-End}]{\setlength{\rightskip}{0pt plus 5cm}double base\-::x\-End\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_aa4702751e837e49dcb88eaf2944f3c1f}
+x-\/coordinate of ending point(x2, y2, z2) 
+
+Definition at line 39 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_a83f02880ca88c37fcb28acced4d6b9a7}{\index{base@{base}!x\-Mid@{x\-Mid}}
+\index{x\-Mid@{x\-Mid}!base@{base}}
+\subsubsection[{x\-Mid}]{\setlength{\rightskip}{0pt plus 5cm}double base\-::x\-Mid\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_a83f02880ca88c37fcb28acced4d6b9a7}
+x-\/coordinate of center(x, y) for circle 
+
+Definition at line 39 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_a7703056e2be3f7e97f974e77146c3a02}{\index{base@{base}!x\-Start@{x\-Start}}
+\index{x\-Start@{x\-Start}!base@{base}}
+\subsubsection[{x\-Start}]{\setlength{\rightskip}{0pt plus 5cm}double base\-::x\-Start\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_a7703056e2be3f7e97f974e77146c3a02}
+x-\/coordinate of starting point(x1, y1, z1) 
+
+Definition at line 39 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_aa5a4fed2eaf64367a8ef693d8d054081}{\index{base@{base}!y\-End@{y\-End}}
+\index{y\-End@{y\-End}!base@{base}}
+\subsubsection[{y\-End}]{\setlength{\rightskip}{0pt plus 5cm}double base\-::y\-End\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_aa5a4fed2eaf64367a8ef693d8d054081}
+y-\/coordinate of ending point(x2, y2, z2) 
+
+Definition at line 39 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_acb79a7b7e25b442e350a151626f8aa46}{\index{base@{base}!y\-Mid@{y\-Mid}}
+\index{y\-Mid@{y\-Mid}!base@{base}}
+\subsubsection[{y\-Mid}]{\setlength{\rightskip}{0pt plus 5cm}double base\-::y\-Mid\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_acb79a7b7e25b442e350a151626f8aa46}
+y-\/coordinate of center(x, y) for circle 
+
+Definition at line 39 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_a11d50718a751a277f133430692b13bbf}{\index{base@{base}!y\-Start@{y\-Start}}
+\index{y\-Start@{y\-Start}!base@{base}}
+\subsubsection[{y\-Start}]{\setlength{\rightskip}{0pt plus 5cm}double base\-::y\-Start\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_a11d50718a751a277f133430692b13bbf}
+y-\/coordinate of starting point(x1, y1, z1) 
+
+Definition at line 39 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_ad599903bf17e619b3fe11c592f981682}{\index{base@{base}!z\-End@{z\-End}}
+\index{z\-End@{z\-End}!base@{base}}
+\subsubsection[{z\-End}]{\setlength{\rightskip}{0pt plus 5cm}double base\-::z\-End\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_ad599903bf17e619b3fe11c592f981682}
+z-\/coordinate of ending point(x2, y2, z2) 
+
+Definition at line 39 of file dxf\-\_\-2\-D.\-h.
+
+\hypertarget{classbase_aa53533269b638644cb48a1cafc969852}{\index{base@{base}!z\-Start@{z\-Start}}
+\index{z\-Start@{z\-Start}!base@{base}}
+\subsubsection[{z\-Start}]{\setlength{\rightskip}{0pt plus 5cm}double base\-::z\-Start\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbase_aa53533269b638644cb48a1cafc969852}
+z-\/coordinate of starting point(x1, y1, z1) 
+
+Definition at line 39 of file dxf\-\_\-2\-D.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{dxf__2D_8h}{dxf\-\_\-2\-D.\-h}\item 
+src/\hyperlink{dxf__base_8cpp}{dxf\-\_\-base.\-cpp}\end{DoxyCompactItemize}

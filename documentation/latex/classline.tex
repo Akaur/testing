@@ -1,0 +1,61 @@
+\hypertarget{classline}{\section{line Class Reference}
+\label{classline}\index{line@{line}}
+}
+
+
+Line entity class.  
+
+
+
+
+{\ttfamily \#include $<$dxf\-\_\-2\-D.\-h$>$}
+
+Inheritance diagram for line\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classline}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classline_a854d4e37d6dc6af1c7cd08cb801c6c26}{\hyperlink{classline_a854d4e37d6dc6af1c7cd08cb801c6c26}{line} ()}\label{classline_a854d4e37d6dc6af1c7cd08cb801c6c26}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classline_a62c98477491c4da965315766ee662ec8}{line} (\hyperlink{classpoint}{point} \&, \hyperlink{classpoint}{point} \&, string, \hyperlink{classdxf}{dxf} \&)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Line entity class. 
+
+Definition at line 172 of file dxf\-\_\-2\-D.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classline_a62c98477491c4da965315766ee662ec8}{\index{line@{line}!line@{line}}
+\index{line@{line}!line@{line}}
+\subsubsection[{line}]{\setlength{\rightskip}{0pt plus 5cm}line\-::line (
+\begin{DoxyParamCaption}
+\item[{{\bf point} \&}]{pt1, }
+\item[{{\bf point} \&}]{pt2, }
+\item[{string}]{dlayer, }
+\item[{{\bf dxf} \&}]{d}
+\end{DoxyParamCaption}
+)}}\label{classline_a62c98477491c4da965315766ee662ec8}
+
+
+Parameterized constructor. 
+
+Initializes starting and ending points of line, specify the layer and calls write\-\_\-\-Line(x\-Start, y\-Start, z\-Start, x\-End, y\-End, z\-End, layer) function of dxf class for writing line entity to D\-X\-F file. 
+
+Definition at line 43 of file dxf\-\_\-line.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{dxf__2D_8h}{dxf\-\_\-2\-D.\-h}\item 
+src/\hyperlink{dxf__line_8cpp}{dxf\-\_\-line.\-cpp}\end{DoxyCompactItemize}

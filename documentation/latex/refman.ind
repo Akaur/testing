@@ -1,0 +1,182 @@
+\begin{theindex}
+
+  \item {base}, \hyperpage{9}
+    \subitem {color}, \hyperpage{11}
+    \subitem {dxf\discretionary {-}{}{}\_\discretionary {-}{}{}filename}, 
+		\hyperpage{11}
+    \subitem {edge\discretionary {-}{}{}\_\discretionary {-}{}{}type}, 
+		\hyperpage{11}
+    \subitem {edges}, \hyperpage{11}
+    \subitem {flag}, \hyperpage{11}
+    \subitem {layer}, \hyperpage{11}
+    \subitem {name}, \hyperpage{11}
+    \subitem {pattern\discretionary {-}{}{}\_\discretionary {-}{}{}name}, 
+		\hyperpage{11}
+    \subitem {radius}, \hyperpage{11}
+    \subitem {read\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Footer}, 
+		\hyperpage{10}
+    \subitem {read\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Header}, 
+		\hyperpage{10}
+    \subitem {read\discretionary {-}{}{}File}, \hyperpage{11}
+    \subitem {readwrite}, \hyperpage{12}
+    \subitem {write\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Hatch\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}End}, 
+		\hyperpage{10}
+    \subitem {write\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Hatch\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Start}, 
+		\hyperpage{10}
+    \subitem {write\discretionary {-}{}{}File}, \hyperpage{12}
+    \subitem {x\discretionary {-}{}{}End}, \hyperpage{12}
+    \subitem {x\discretionary {-}{}{}Mid}, \hyperpage{12}
+    \subitem {x\discretionary {-}{}{}Start}, \hyperpage{12}
+    \subitem {y\discretionary {-}{}{}End}, \hyperpage{12}
+    \subitem {y\discretionary {-}{}{}Mid}, \hyperpage{12}
+    \subitem {y\discretionary {-}{}{}Start}, \hyperpage{12}
+    \subitem {z\discretionary {-}{}{}End}, \hyperpage{12}
+    \subitem {z\discretionary {-}{}{}Start}, \hyperpage{13}
+
+  \indexspace
+
+  \item {circle}, \hyperpage{13}
+    \subitem {circle}, \hyperpage{13, 14}
+  \item {color}
+    \subitem {base}, \hyperpage{11}
+
+  \indexspace
+
+  \item {dxf}, \hyperpage{14}
+    \subitem {dxf}, \hyperpage{15}
+    \subitem {save}, \hyperpage{15}
+    \subitem {write\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Circle}, 
+		\hyperpage{15, 16}
+    \subitem {write\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Hatch\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Circle}, 
+		\hyperpage{16}
+    \subitem {write\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Hatch\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Rect}, 
+		\hyperpage{16}
+    \subitem {write\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Line}, 
+		\hyperpage{16}
+    \subitem {write\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Rect}, 
+		\hyperpage{16, 17}
+  \item {dxf\discretionary {-}{}{}\_\discretionary {-}{}{}filename}
+    \subitem {base}, \hyperpage{11}
+
+  \indexspace
+
+  \item {edge\discretionary {-}{}{}\_\discretionary {-}{}{}type}
+    \subitem {base}, \hyperpage{11}
+  \item {edges}
+    \subitem {base}, \hyperpage{11}
+
+  \indexspace
+
+  \item {flag}
+    \subitem {base}, \hyperpage{11}
+
+  \indexspace
+
+  \item {include/dxf\discretionary {-}{}{}\_\discretionary {-}{}{}2\discretionary {-}{}{}D.\discretionary {-}{}{}h}, 
+		\hyperpage{21}
+
+  \indexspace
+
+  \item {layer}
+    \subitem {base}, \hyperpage{11}
+  \item {line}, \hyperpage{17}
+    \subitem {line}, \hyperpage{17}
+
+  \indexspace
+
+  \item {name}
+    \subitem {base}, \hyperpage{11}
+
+  \indexspace
+
+  \item {pattern\discretionary {-}{}{}\_\discretionary {-}{}{}name}
+    \subitem {base}, \hyperpage{11}
+  \item {point}, \hyperpage{18}
+    \subitem {point}, \hyperpage{18}
+    \subitem {x\discretionary {-}{}{}Co}, \hyperpage{18}
+    \subitem {y\discretionary {-}{}{}Co}, \hyperpage{18}
+    \subitem {z\discretionary {-}{}{}Co}, \hyperpage{18}
+
+  \indexspace
+
+  \item {radius}
+    \subitem {base}, \hyperpage{11}
+  \item {read\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Footer}
+    \subitem {base}, \hyperpage{10}
+  \item {read\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Header}
+    \subitem {base}, \hyperpage{10}
+  \item {read\discretionary {-}{}{}File}
+    \subitem {base}, \hyperpage{11}
+  \item {readwrite}
+    \subitem {base}, \hyperpage{12}
+  \item {rectangle}, \hyperpage{19}
+    \subitem {rectangle}, \hyperpage{19}
+
+  \indexspace
+
+  \item {save}
+    \subitem {dxf}, \hyperpage{15}
+  \item {src/dxf\discretionary {-}{}{}\_\discretionary {-}{}{}base.\discretionary {-}{}{}cpp}, 
+		\hyperpage{22}
+  \item {src/dxf\discretionary {-}{}{}\_\discretionary {-}{}{}circle.\discretionary {-}{}{}cpp}, 
+		\hyperpage{22}
+  \item {src/dxf\discretionary {-}{}{}\_\discretionary {-}{}{}dxf.\discretionary {-}{}{}cpp}, 
+		\hyperpage{23}
+  \item {src/dxf\discretionary {-}{}{}\_\discretionary {-}{}{}line.\discretionary {-}{}{}cpp}, 
+		\hyperpage{23}
+  \item {src/dxf\discretionary {-}{}{}\_\discretionary {-}{}{}point.\discretionary {-}{}{}cpp}, 
+		\hyperpage{24}
+  \item {src/dxf\discretionary {-}{}{}\_\discretionary {-}{}{}rect.\discretionary {-}{}{}cpp}, 
+		\hyperpage{24}
+
+  \indexspace
+
+  \item {write\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Circle}
+    \subitem {dxf}, \hyperpage{15, 16}
+  \item {write\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Hatch\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Circle}
+    \subitem {dxf}, \hyperpage{16}
+  \item {write\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Hatch\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}End}
+    \subitem {base}, \hyperpage{10}
+  \item {write\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Hatch\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Rect}
+    \subitem {dxf}, \hyperpage{16}
+  \item {write\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Hatch\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Start}
+    \subitem {base}, \hyperpage{10}
+  \item {write\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Line}
+    \subitem {dxf}, \hyperpage{16}
+  \item {write\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Rect}
+    \subitem {dxf}, \hyperpage{16, 17}
+  \item {write\discretionary {-}{}{}File}
+    \subitem {base}, \hyperpage{12}
+
+  \indexspace
+
+  \item {x\discretionary {-}{}{}Co}
+    \subitem {point}, \hyperpage{18}
+  \item {x\discretionary {-}{}{}End}
+    \subitem {base}, \hyperpage{12}
+  \item {x\discretionary {-}{}{}Mid}
+    \subitem {base}, \hyperpage{12}
+  \item {x\discretionary {-}{}{}Start}
+    \subitem {base}, \hyperpage{12}
+
+  \indexspace
+
+  \item {y\discretionary {-}{}{}Co}
+    \subitem {point}, \hyperpage{18}
+  \item {y\discretionary {-}{}{}End}
+    \subitem {base}, \hyperpage{12}
+  \item {y\discretionary {-}{}{}Mid}
+    \subitem {base}, \hyperpage{12}
+  \item {y\discretionary {-}{}{}Start}
+    \subitem {base}, \hyperpage{12}
+
+  \indexspace
+
+  \item {z\discretionary {-}{}{}Co}
+    \subitem {point}, \hyperpage{18}
+  \item {z\discretionary {-}{}{}End}
+    \subitem {base}, \hyperpage{12}
+  \item {z\discretionary {-}{}{}Start}
+    \subitem {base}, \hyperpage{13}
+
+\end{theindex}

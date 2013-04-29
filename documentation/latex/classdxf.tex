@@ -1,0 +1,285 @@
+\hypertarget{classdxf}{\section{dxf Class Reference}
+\label{classdxf}\index{dxf@{dxf}}
+}
+
+
+Draw entities in D\-X\-F file.  
+
+
+
+
+{\ttfamily \#include $<$dxf\-\_\-2\-D.\-h$>$}
+
+Inheritance diagram for dxf\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdxf}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classdxf_ac4deaef37b2db70a0361104c66e0b481}{\hyperlink{classdxf_ac4deaef37b2db70a0361104c66e0b481}{dxf} ()}\label{classdxf_ac4deaef37b2db70a0361104c66e0b481}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classdxf_abae446dc642503b58fd45bcd22e08d78}{dxf} (string)
+\begin{DoxyCompactList}\small\item\em Parameterised constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classdxf_a4daa6ebaa33481a5893d31095753fb09}{save} ()
+\begin{DoxyCompactList}\small\item\em Save D\-X\-F file. \end{DoxyCompactList}\item 
+void \hyperlink{classdxf_aa79b15af723a7df01acf575957e2104d}{write\-\_\-\-Line} (double, double, double, double, double, double, string)
+\begin{DoxyCompactList}\small\item\em Line entity. \end{DoxyCompactList}\item 
+void \hyperlink{classdxf_a45735534e1e6417003633a8a33ccebde}{write\-\_\-\-Circle} (double, double, double, double, string)
+\begin{DoxyCompactList}\small\item\em Circle entity. \end{DoxyCompactList}\item 
+void \hyperlink{classdxf_a62a9d48800f66a6811822264426a8ee0}{write\-\_\-\-Circle} (double, double, double, double, string, int, int)
+\begin{DoxyCompactList}\small\item\em Circle (solid fill) entity. \end{DoxyCompactList}\item 
+void \hyperlink{classdxf_a793fdaf19224abd12a239bcad0eda01b}{write\-\_\-\-Circle} (double, double, double, double, string, int, string, int)
+\begin{DoxyCompactList}\small\item\em Circle (pattern fill) entity. \end{DoxyCompactList}\item 
+void \hyperlink{classdxf_abc4eaf8ed68b05f25af6d31bd75ec3ce}{write\-\_\-\-Hatch\-\_\-\-Circle} (double, double, double, double)
+\begin{DoxyCompactList}\small\item\em Hatch circle entity. \end{DoxyCompactList}\item 
+void \hyperlink{classdxf_ae214af172af9ba53e10664cae1a53318}{write\-\_\-\-Rect} (double, double, double, double, double, double, string)
+\begin{DoxyCompactList}\small\item\em Rectangle entity. \end{DoxyCompactList}\item 
+void \hyperlink{classdxf_a67d61f8f015b73d585a5546ab915481d}{write\-\_\-\-Rect} (double, double, double, double, double, double, string, int, int)
+\begin{DoxyCompactList}\small\item\em Rectangle (solid fill) entity. \end{DoxyCompactList}\item 
+void \hyperlink{classdxf_ae6b53acc7a648fc435b25a8490947119}{write\-\_\-\-Rect} (double, double, double, double, double, double, string, int, string, int)
+\begin{DoxyCompactList}\small\item\em Rectangle (pattern fill) entity. \end{DoxyCompactList}\item 
+void \hyperlink{classdxf_ab4c7275d37a1151c9f2004d3711d5441}{write\-\_\-\-Hatch\-\_\-\-Rect} (double, double, double, double, double, double)
+\begin{DoxyCompactList}\small\item\em Hatch rectangle entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Draw entities in D\-X\-F file. 
+
+Definition at line 114 of file dxf\-\_\-2\-D.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classdxf_abae446dc642503b58fd45bcd22e08d78}{\index{dxf@{dxf}!dxf@{dxf}}
+\index{dxf@{dxf}!dxf@{dxf}}
+\subsubsection[{dxf}]{\setlength{\rightskip}{0pt plus 5cm}dxf\-::dxf (
+\begin{DoxyParamCaption}
+\item[{string}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classdxf_abae446dc642503b58fd45bcd22e08d78}
+
+
+Parameterised constructor. 
+
+Constructor opens the filename for writing and writes D\-X\-F header to it. 
+
+Definition at line 43 of file dxf\-\_\-dxf.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classdxf_a4daa6ebaa33481a5893d31095753fb09}{\index{dxf@{dxf}!save@{save}}
+\index{save@{save}!dxf@{dxf}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void dxf\-::save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdxf_a4daa6ebaa33481a5893d31095753fb09}
+
+
+Save D\-X\-F file. 
+
+Constructor closes D\-X\-F file after writing D\-X\-F footer to it. 
+
+Definition at line 60 of file dxf\-\_\-dxf.\-cpp.
+
+\hypertarget{classdxf_a45735534e1e6417003633a8a33ccebde}{\index{dxf@{dxf}!write\-\_\-\-Circle@{write\-\_\-\-Circle}}
+\index{write\-\_\-\-Circle@{write\-\_\-\-Circle}!dxf@{dxf}}
+\subsubsection[{write\-\_\-\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}void dxf\-::write\-\_\-\-Circle (
+\begin{DoxyParamCaption}
+\item[{double}]{x\-Start, }
+\item[{double}]{y\-Start, }
+\item[{double}]{z\-Start, }
+\item[{double}]{radius, }
+\item[{string}]{layer}
+\end{DoxyParamCaption}
+)}}\label{classdxf_a45735534e1e6417003633a8a33ccebde}
+
+
+Circle entity. 
+
+Writes circle entity to D\-X\-F file. 
+
+Definition at line 109 of file dxf\-\_\-dxf.\-cpp.
+
+\hypertarget{classdxf_a62a9d48800f66a6811822264426a8ee0}{\index{dxf@{dxf}!write\-\_\-\-Circle@{write\-\_\-\-Circle}}
+\index{write\-\_\-\-Circle@{write\-\_\-\-Circle}!dxf@{dxf}}
+\subsubsection[{write\-\_\-\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}void dxf\-::write\-\_\-\-Circle (
+\begin{DoxyParamCaption}
+\item[{double}]{x\-Start, }
+\item[{double}]{y\-Start, }
+\item[{double}]{z\-Start, }
+\item[{double}]{radius, }
+\item[{string}]{layer, }
+\item[{int}]{flag, }
+\item[{int}]{color}
+\end{DoxyParamCaption}
+)}}\label{classdxf_a62a9d48800f66a6811822264426a8ee0}
+
+
+Circle (solid fill) entity. 
+
+Writes circle (solid fill) entity to D\-X\-F file by calling write\-\_\-\-Hatch\-\_\-\-Start(flag, pattern\-\_\-name, color), write\-\_\-\-Hatch\-\_\-\-Circle(x\-Start, y\-Start, z\-Start, radius), \hyperlink{classbase_acae9199dd5ca813b319665e8aa963bad}{write\-\_\-\-Hatch\-\_\-\-End()} and write\-\_\-\-Circle(x\-Start, y\-Start, z\-Start, radius, layer). 
+
+Definition at line 140 of file dxf\-\_\-dxf.\-cpp.
+
+\hypertarget{classdxf_a793fdaf19224abd12a239bcad0eda01b}{\index{dxf@{dxf}!write\-\_\-\-Circle@{write\-\_\-\-Circle}}
+\index{write\-\_\-\-Circle@{write\-\_\-\-Circle}!dxf@{dxf}}
+\subsubsection[{write\-\_\-\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}void dxf\-::write\-\_\-\-Circle (
+\begin{DoxyParamCaption}
+\item[{double}]{x\-Start, }
+\item[{double}]{y\-Start, }
+\item[{double}]{z\-Start, }
+\item[{double}]{radius, }
+\item[{string}]{layer, }
+\item[{int}]{flag, }
+\item[{string}]{pattern\-\_\-name, }
+\item[{int}]{color}
+\end{DoxyParamCaption}
+)}}\label{classdxf_a793fdaf19224abd12a239bcad0eda01b}
+
+
+Circle (pattern fill) entity. 
+
+Writes circle (pattern fill) entity to D\-X\-F file by calling write\-\_\-\-Hatch\-\_\-\-Start(flag, pattern\-\_\-name, color), write\-\_\-\-Hatch\-\_\-\-Circle(x\-Start, y\-Start, z\-Start, radius), \hyperlink{classbase_acae9199dd5ca813b319665e8aa963bad}{write\-\_\-\-Hatch\-\_\-\-End()} and write\-\_\-\-Circle(x\-Start, y\-Start, z\-Start, radius, layer). 
+
+Definition at line 169 of file dxf\-\_\-dxf.\-cpp.
+
+\hypertarget{classdxf_abc4eaf8ed68b05f25af6d31bd75ec3ce}{\index{dxf@{dxf}!write\-\_\-\-Hatch\-\_\-\-Circle@{write\-\_\-\-Hatch\-\_\-\-Circle}}
+\index{write\-\_\-\-Hatch\-\_\-\-Circle@{write\-\_\-\-Hatch\-\_\-\-Circle}!dxf@{dxf}}
+\subsubsection[{write\-\_\-\-Hatch\-\_\-\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}void dxf\-::write\-\_\-\-Hatch\-\_\-\-Circle (
+\begin{DoxyParamCaption}
+\item[{double}]{x\-Start, }
+\item[{double}]{y\-Start, }
+\item[{double}]{z\-Start, }
+\item[{double}]{radius}
+\end{DoxyParamCaption}
+)}}\label{classdxf_abc4eaf8ed68b05f25af6d31bd75ec3ce}
+
+
+Hatch circle entity. 
+
+Writes hatch circle entity to D\-X\-F file. 
+
+Definition at line 192 of file dxf\-\_\-dxf.\-cpp.
+
+\hypertarget{classdxf_ab4c7275d37a1151c9f2004d3711d5441}{\index{dxf@{dxf}!write\-\_\-\-Hatch\-\_\-\-Rect@{write\-\_\-\-Hatch\-\_\-\-Rect}}
+\index{write\-\_\-\-Hatch\-\_\-\-Rect@{write\-\_\-\-Hatch\-\_\-\-Rect}!dxf@{dxf}}
+\subsubsection[{write\-\_\-\-Hatch\-\_\-\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void dxf\-::write\-\_\-\-Hatch\-\_\-\-Rect (
+\begin{DoxyParamCaption}
+\item[{double}]{x\-Start, }
+\item[{double}]{y\-Start, }
+\item[{double}]{z\-Start, }
+\item[{double}]{x\-End, }
+\item[{double}]{y\-End, }
+\item[{double}]{z\-End}
+\end{DoxyParamCaption}
+)}}\label{classdxf_ab4c7275d37a1151c9f2004d3711d5441}
+
+
+Hatch rectangle entity. 
+
+Writes hatch rectangle entity to D\-X\-F file. 
+
+Definition at line 303 of file dxf\-\_\-dxf.\-cpp.
+
+\hypertarget{classdxf_aa79b15af723a7df01acf575957e2104d}{\index{dxf@{dxf}!write\-\_\-\-Line@{write\-\_\-\-Line}}
+\index{write\-\_\-\-Line@{write\-\_\-\-Line}!dxf@{dxf}}
+\subsubsection[{write\-\_\-\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void dxf\-::write\-\_\-\-Line (
+\begin{DoxyParamCaption}
+\item[{double}]{x\-Start, }
+\item[{double}]{y\-Start, }
+\item[{double}]{z\-Start, }
+\item[{double}]{x\-End, }
+\item[{double}]{y\-End, }
+\item[{double}]{z\-End, }
+\item[{string}]{layer}
+\end{DoxyParamCaption}
+)}}\label{classdxf_aa79b15af723a7df01acf575957e2104d}
+
+
+Line entity. 
+
+Writes line entity to D\-X\-F file. 
+
+Definition at line 78 of file dxf\-\_\-dxf.\-cpp.
+
+\hypertarget{classdxf_ae214af172af9ba53e10664cae1a53318}{\index{dxf@{dxf}!write\-\_\-\-Rect@{write\-\_\-\-Rect}}
+\index{write\-\_\-\-Rect@{write\-\_\-\-Rect}!dxf@{dxf}}
+\subsubsection[{write\-\_\-\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void dxf\-::write\-\_\-\-Rect (
+\begin{DoxyParamCaption}
+\item[{double}]{x\-Start, }
+\item[{double}]{y\-Start, }
+\item[{double}]{z\-Start, }
+\item[{double}]{x\-End, }
+\item[{double}]{y\-End, }
+\item[{double}]{z\-End, }
+\item[{string}]{layer}
+\end{DoxyParamCaption}
+)}}\label{classdxf_ae214af172af9ba53e10664cae1a53318}
+
+
+Rectangle entity. 
+
+Writes rectangle entity to D\-X\-F file. 
+
+Definition at line 213 of file dxf\-\_\-dxf.\-cpp.
+
+\hypertarget{classdxf_a67d61f8f015b73d585a5546ab915481d}{\index{dxf@{dxf}!write\-\_\-\-Rect@{write\-\_\-\-Rect}}
+\index{write\-\_\-\-Rect@{write\-\_\-\-Rect}!dxf@{dxf}}
+\subsubsection[{write\-\_\-\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void dxf\-::write\-\_\-\-Rect (
+\begin{DoxyParamCaption}
+\item[{double}]{x\-Start, }
+\item[{double}]{y\-Start, }
+\item[{double}]{z\-Start, }
+\item[{double}]{x\-End, }
+\item[{double}]{y\-End, }
+\item[{double}]{z\-End, }
+\item[{string}]{layer, }
+\item[{int}]{flag, }
+\item[{int}]{color}
+\end{DoxyParamCaption}
+)}}\label{classdxf_a67d61f8f015b73d585a5546ab915481d}
+
+
+Rectangle (solid fill) entity. 
+
+Writes rectangle (solid fill) entity to D\-X\-F file by calling write\-\_\-\-Hatch\-\_\-\-Start(flag, pattern\-\_\-name, color), write\-\_\-\-Hatch\-\_\-\-Rect(x\-Start, y\-Start, z\-Start, x\-End, y\-End, z\-End), \hyperlink{classbase_acae9199dd5ca813b319665e8aa963bad}{write\-\_\-\-Hatch\-\_\-\-End()} and write\-\_\-\-Rect(x\-Start, y\-Start, z\-Start, x\-End, y\-End, z\-End, layer). 
+
+Definition at line 249 of file dxf\-\_\-dxf.\-cpp.
+
+\hypertarget{classdxf_ae6b53acc7a648fc435b25a8490947119}{\index{dxf@{dxf}!write\-\_\-\-Rect@{write\-\_\-\-Rect}}
+\index{write\-\_\-\-Rect@{write\-\_\-\-Rect}!dxf@{dxf}}
+\subsubsection[{write\-\_\-\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void dxf\-::write\-\_\-\-Rect (
+\begin{DoxyParamCaption}
+\item[{double}]{x\-Start, }
+\item[{double}]{y\-Start, }
+\item[{double}]{z\-Start, }
+\item[{double}]{x\-End, }
+\item[{double}]{y\-End, }
+\item[{double}]{z\-End, }
+\item[{string}]{layer, }
+\item[{int}]{flag, }
+\item[{string}]{pattern\-\_\-name, }
+\item[{int}]{color}
+\end{DoxyParamCaption}
+)}}\label{classdxf_ae6b53acc7a648fc435b25a8490947119}
+
+
+Rectangle (pattern fill) entity. 
+
+Writes rectangle (pattern fill) entity to D\-X\-F file by calling write\-\_\-\-Hatch\-\_\-\-Start(flag, pattern\-\_\-name, color), write\-\_\-\-Hatch\-\_\-\-Rect(x\-Start, y\-Start, z\-Start, x\-End, y\-End, z\-End), \hyperlink{classbase_acae9199dd5ca813b319665e8aa963bad}{write\-\_\-\-Hatch\-\_\-\-End()} and write\-\_\-\-Rect(x\-Start, y\-Start, z\-Start, x\-End, y\-End, z\-End, layer). 
+
+Definition at line 279 of file dxf\-\_\-dxf.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{dxf__2D_8h}{dxf\-\_\-2\-D.\-h}\item 
+src/\hyperlink{dxf__dxf_8cpp}{dxf\-\_\-dxf.\-cpp}\end{DoxyCompactItemize}
