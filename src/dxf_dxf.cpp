@@ -60,7 +60,7 @@ dxf  :: dxf (string filename)
 void dxf :: save()
 {	
     read_Footer();
-	writeFile.close();
+    writeFile.close();
 
 }
 
@@ -325,5 +325,3 @@ void dxf :: write_Hatch_Rect(double xStart, double yStart, double zStart,
 		         "\n";
 
 }
-
-

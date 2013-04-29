@@ -22,8 +22,8 @@
 /** 
  *      \class  base
  *      \fn     base :: read_Header()
- *      \brief  Opens "dxf_header.txt" file for reading and writes 
-* 		        at the start of DXF file.
+ *      \brief  Opens "dxf_header.txt" file for reading and writes at the start
+ *              of DXF file.
  */
 
 
@@ -110,5 +110,4 @@ void base :: write_Hatch_End()
 		         "\n 41 \n1.0 \n";
 
 }
-
 

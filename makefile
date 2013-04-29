@@ -1,36 +1,35 @@
 #
 #
-# Makefile for libdxf_2D
+# Makefile for libdxf_2D.so
 #
 #
-#------------------------------    dirs  -------------------------------------
+#--------------------------------  dirs  --------------------------------------
 
-OBJ_DIR  :=	obj/
-LIB_DIR  :=	lib/
+OBJ_DIR  :=		obj/
+LIB_DIR  :=		lib/
 TEST_DIR := 	test/
 SRC_DIR  := 	src/
 
-# ----------------------------   compiler   ----------------------------------
+# -----------------------------   compiler   ----------------------------------
 
 CXX = g++
 
-# -------------------------   compiler flags   -------------------------------
+# --------------------------   compiler flags   -------------------------------
 
 CXXFLAGS = -c -Wall -Werror -fpic
 
-#--------------------     shared library flags   -----------------------------
+#-----------------------  shared library flags   -----------------------------
 
 SHLIB = -shared -o
 
-# --------------------   dynamic linking flags    ----------------------------
+# ---------------------   dynamic linking flags    ----------------------------
 
 DYN_LINKFLAGS = -L./$(LIB_DIR) -Wall
 
 # ----------------------   library dxf_2D.so    ------------------------------
 
-LIB = $(LIB_DIR)libdxf_2D.so
-
-LIB_NAME = libdxf_2D.so
+LIB 		=		$(LIB_DIR)libdxf_2D.so
+LIB_NAME 	=	 	libdxf_2D.so
 
 #-------------------   library at linking time   -----------------------------
 
@@ -66,19 +65,19 @@ OBJ_RECT   := 	$(OBJ_DIR)dxf_rect.o
 
 # ----- ---------------    library object files   ----------------------------
 
-LIB_OBJS := 	$(OBJ_DIR)dxf_circle.o	\
-				$(OBJ_DIR)dxf_base.o	\
-				$(OBJ_DIR)dxf_dxf.o 	\
-				$(OBJ_DIR)dxf_line.o	\
-				$(OBJ_DIR)dxf_point.o	\
+LIB_OBJS 	:=	$(OBJ_DIR)dxf_circle.o		\
+				$(OBJ_DIR)dxf_base.o		\
+				$(OBJ_DIR)dxf_dxf.o 		\
+				$(OBJ_DIR)dxf_line.o		\
+				$(OBJ_DIR)dxf_point.o		\
 				$(OBJ_DIR)dxf_rect.o
 
-LIB_OBJ := 	../$(OBJ_DIR)dxf_circle.o	\
-			../$(OBJ_DIR)dxf_base.o		\
-			../$(OBJ_DIR)dxf_dxf.o		\
-			../$(OBJ_DIR)dxf_line.o		\
-			../$(OBJ_DIR)dxf_point.o	\
-			../$(OBJ_DIR)dxf_rect.o
+LIB_OBJ 	:= 	../$(OBJ_DIR)dxf_circle.o	\
+				../$(OBJ_DIR)dxf_base.o		\
+				../$(OBJ_DIR)dxf_dxf.o		\
+				../$(OBJ_DIR)dxf_line.o		\
+				../$(OBJ_DIR)dxf_point.o	\
+				../$(OBJ_DIR)dxf_rect.o
 
 
 # -----------------------   main output program    ---------------------------
@@ -135,6 +134,4 @@ $(OBJ_RECT): $(SRC_RECT)
 
 clean:
 	$(RM) *.o temp
-
-
 
