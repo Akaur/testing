@@ -121,6 +121,21 @@ void dxf :: write_Circle(double xStart, double yStart, double zStart,
 
 }
 
+void dxf :: write_Arc(double xStart, double yStart, double zStart,    
+                      double radius, double start_angle,              
+                      double end_angle, string layer)                 
+{                                                                     
+        writeFile << " 0 \nARC \n 5 \n43"                             
+                         "\n 100 \nAcDbEntity"                        
+                         "\n 100 \nAcDbArc"                           
+                         "\n 8 \n" << layer << "\n 62 \n256"          
+                         "\n 370 \n-1 \n 6 \nByLayer "                
+                         "\n 10 \n" << xStart <<                      
+                         "\n 20 \n" << yStart <<                      
+                         "\n 40 \n" << radius <<                      
+                         "\n 50 \n" << start_angle <<                 
+                         "\n 51 \n" << end_angle <<                   
+                         "\n"; 
 
 
 /**
