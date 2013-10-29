@@ -5,8 +5,8 @@
 #
 #--------------------------------  dirs  --------------------------------------
 
-OBJ_DIR  :=	obj/
-LIB_DIR  :=	lib/
+OBJ_DIR  :=		obj/
+LIB_DIR  :=		lib/
 TEST_DIR := 	test/
 SRC_DIR  := 	src/
 
